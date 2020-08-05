@@ -2,7 +2,7 @@ export interface ISubscription {
   id: number;
   name: string;
   type: SubscriptionType;
-  usage?: IUsage;
+  usage?: IUsage[];
 }
 
 export enum SubscriptionType {

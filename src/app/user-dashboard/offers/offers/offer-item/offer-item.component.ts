@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
+import { IOffer } from '../../models';
 
 @Component({
   selector: 'app-offer-item',
@@ -7,6 +8,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class OfferItemComponent implements OnInit {
 
+  @Input() offer: IOffer;
   constructor() { }
 
   ngOnInit(): void {
