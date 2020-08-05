@@ -1,7 +1,7 @@
 
 <app-error *ngFor="let item of errors" [error]="item"></app-error>
 
-<app-loading *ngIf="!offers; else noOffers"  ></app-loading>
+<app-loading *ngIf="!offers && isLoading; else noOffers"></app-loading>
 
  <ng-template #noOffers>
    <app-no-offer-found *ngIf="!offers.length; else offersContainer"></app-no-offer-found>
