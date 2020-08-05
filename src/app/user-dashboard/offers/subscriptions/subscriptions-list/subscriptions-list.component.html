@@ -1,0 +1,11 @@
+<div class="row">
+  <div *ngIf="isLoading" class="col-12 text-center">
+    <div class="spinner-border text-info text-center" role="status">
+      <span class="sr-only">Loading...</span>
+    </div>
+  </div>
+  <div *ngIf="error" class="col-12 text-danger text-center">{{error}}</div>
+  <div class="col-md-{{ colSize }}" *ngFor="let item of subscriptions">
+    <app-subscriptions-item [subscription]="item"></app-subscriptions-item>
+  </div>
+</div>
