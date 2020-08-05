@@ -14,6 +14,7 @@ import {
 import { OffersRoutingModule } from './offers-routing.module';
 import { SubIconComponent } from './subscriptions/subscriptions-item/sub-icon/sub-icon.component';
 import { UsageChartComponent } from './subscriptions/subscriptions-item/usage-chart/usage-chart.component';
+import { ErrorComponent } from './components/error/error.component';
 
 @NgModule({
   declarations: [
@@ -25,6 +26,7 @@ import { UsageChartComponent } from './subscriptions/subscriptions-item/usage-ch
     UsageChartComponent,
     LoadingComponent,
     NoOfferFoundComponent,
+    ErrorComponent,
   ],
   imports: [CommonModule, OffersRoutingModule, HttpClientModule],
 })

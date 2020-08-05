@@ -1,3 +1,6 @@
+
+<app-error *ngFor="let item of errors" [error]="item"></app-error>
+
 <app-loading *ngIf="!offers; else noOffers"  ></app-loading>
 
  <ng-template #noOffers>
