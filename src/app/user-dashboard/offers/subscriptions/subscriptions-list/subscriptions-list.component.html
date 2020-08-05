@@ -1,1 +1,5 @@
-<p>subscriptions-list works!</p>
+<div class="row">
+  <div class="col-md-{{ colSize }}" *ngFor="let item of subscriptions">
+    <app-subscriptions-item [subscription]="item"></app-subscriptions-item>
+  </div>
+</div>

@@ -6,8 +6,8 @@ export const environment = {
   production: false,
   api: {
     getMainURL: () => 'https://selfcare-service.demo.melita.com/interview/api',
-    getOffersURL: () => this.mainUrl.concat('/offers'),
-    getSubscriptionsURL: id => this.mainUrl.concat(`/offers/${id}/subscriptions`)
+    getOffersURL: () => environment.api.getMainURL().concat('/offers'),
+    getSubscriptionsURL: id => environment.api.getMainURL().concat(`/offers/${id}/subscriptions`)
   }
 };
 
