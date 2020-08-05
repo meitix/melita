@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import { HttpClient } from '@angular/common/http';
 import { OffersService } from '../../offers.service';
 import { IOffer } from '../../models';
 
@@ -9,7 +8,7 @@ import { IOffer } from '../../models';
   styleUrls: ['./offers-list.component.scss'],
 })
 export class OffersListComponent implements OnInit {
-  offers: IOffer[] = [];
+  offers: IOffer[];
   errors: string[] = [];
   constructor(private offersService: OffersService) {}
 

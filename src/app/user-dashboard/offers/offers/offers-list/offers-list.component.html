@@ -1,12 +1,16 @@
-<div style="margin-bottom: 10px;" class="row" *ngFor="let offer of offers">
-  <div class="card col-12 card-stats mb-4 mb-lg-0">
-    <div class="card-body">
-      <app-offer-item [offer]="offer"></app-offer-item>
-      <hr/>
+<app-loading *ngIf="!offers; else noOffers"  ></app-loading>
+
+<ng-template #offersContainer>
+  <div style="margin-bottom: 10px;" class="row" *ngFor="let offer of offers">
+    <div class="card col-12 card-stats mb-4 mb-lg-0">
+      <div class="card-body">
+        <app-offer-item [offer]="offer"></app-offer-item>
+        <hr />
         <app-subscriptions-list
           [colSize]="3"
           [offer]="offer"
         ></app-subscriptions-list>
+      </div>
     </div>
   </div>
-</div>
+</ng-template>
