@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
-import { OffersListComponent } from './offers/offers-list/offers-list.component';
+import { OffersListComponent } from './components';
 
 const routes: Routes = [
   {path: '', pathMatch: '', component: OffersListComponent}
